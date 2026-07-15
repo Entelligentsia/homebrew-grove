@@ -11,7 +11,7 @@
 class Grove < Formula
   desc "Structural, byte-precise, token-cheap codebase access for coding agents"
   homepage "https://github.com/Entelligentsia/grove"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   BASE = "https://github.com/Entelligentsia/grove/releases/download/v#{version}".freeze
@@ -19,22 +19,22 @@ class Grove < Formula
   on_macos do
     on_arm do
       url "#{BASE}/grove-aarch64-apple-darwin.tar.gz"
-      sha256 "f07ee3942bed5de5fce0d827056b6f88250ee6324dd47d95e7d2d57c15854437"
+      sha256 "ed7b13ebce10b0e3777f092f8f10218f695cdd3dd51757b0af17d7f49e9c13fe"
     end
     on_intel do
       url "#{BASE}/grove-x86_64-apple-darwin.tar.gz"
-      sha256 "728dd38ae9b03d30fd72e657be79b61081e84954e3eb1d64f85c5be86fb1083c"
+      sha256 "dbb266d46f089a54ec03a137052e538569e21eb10308c59362373757586b172f"
     end
   end
 
   on_linux do
     on_arm do
       url "#{BASE}/grove-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0085012caac86c377968e1d262e626fbd7bdf4d9e868a263631d16ec8937b86a"
+      sha256 "83a79370506a1d54297e13cf9102b329f75b9f75b18098e2981e1532707e951f"
     end
     on_intel do
       url "#{BASE}/grove-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7df64498568da94bc9ce12e691f1c280e5b9263fadb3565c0191c4c055292379"
+      sha256 "5151c670497440ca2d7ca7e88ad1e0c84e8bb9403b80c14363f7f53c3043ae4e"
     end
   end
 
